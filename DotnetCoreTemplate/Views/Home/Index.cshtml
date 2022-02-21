@@ -6,8 +6,13 @@
     <h1 class="display-4">Welcome To my channel</h1>
     <p>Learn about my <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
-
-<button type="button" class="btn btn-primary connect_wallet">Connect Wallet</button>
+<div class="row">
+    <div class="col-md-2">
+        <button type="button" class="w-75 btn btn-primary connect_wallet">Connect Wallet</button>
+    </div>
+    
+    <label class="col-md-2 wallet_address"></label>
+</div>
 <p></p>
 
 <div class="row">
@@ -15,7 +20,8 @@
         <input type="text" class="form-control" id="amoutWithdraw" placeholder="Amount Withdraw"> 
     </div>
     
-    <button type="button" class="col-md-2 btn btn-success">Withdraw</button>
+    <button type="button" class="col-md-2 btn btn-success disabled btnWithdraw">Withdraw</button>
+    
 </div>
 
 <p></p>
@@ -24,9 +30,6 @@
         <input type="text" class="form-control" id="amoutDeposit" placeholder="Amount"> 
     </div>
     
-    <button type="button" class="col-md-2 btn btn-warning">Deposit</button>
+    <button type="button" class="col-md-2 btn btn-warning disabled btnDeposit">Deposit</button>
 </div>
-
-
-<button type="button" class="btn btn-link">Link</button>
 </div>
